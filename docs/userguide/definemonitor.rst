@@ -72,6 +72,9 @@ Alarm Maximum FPS
 Reference Image Blend %ge 
     Each analysed image in ZoneMinder is a composite of previous images and is formed by applying the current image as a certain percentage of the previous reference image. Thus, if we entered the value of 10 here, each image’s part in the reference image will diminish by a factor of 0.9 each time round. So a typical reference image will be 10% the previous image, 9% the one before that and then 8.1%, 7.2%, 6.5% and so on of the rest of the way. An image will effectively vanish around 25 images later than when it was added. This blend value is what is specified here and if higher will make slower progressing events less detectable as the reference image would change more quickly. Similarly events will be deemed to be over much sooner as the reference image adapts to the new images more quickly. In signal processing terms the higher this value the steeper the event attack and decay of the signal. It depends on your particular requirements what the appropriate value would be for you but start with 10 here and adjust it (usually down) later if necessary. 
 
+.. todo::
+  add section Alarm Reference Image Blend %ge
+  
 Triggers 
     This small section lets you select which triggers will apply if the run mode has been set to ‘triggered’ above. The most common trigger is X10 and this will appear here if you indicated that your system supported it during installation. Only X10 is supported as a shipped trigger with ZoneMinder at present but it is possible that other triggers will become available as necessary. You can also just use ‘cron’ jobs or other mechanisms to actually control the camera and keep them completely outside of the ZoneMinder settings. The zmtrigger.pl script is also available to implement custom external triggering. 
 
