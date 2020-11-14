@@ -72,6 +72,9 @@ Here is an example of multiple run states that I've defined. Each one of these r
 * **O**: These are the "Zones". Zones are areas within the camera that you mark as 'hotspots' for motion detection. Simply put, when you first configure your monitors (cameras), by default Zoneminder uses the entire field of view of the camera to detect motion. You may not want this. You may want to create "zones" specifically for detecting motion and ignore others. For example, lets consider a room with a fan that spins. You surely don't want to consider the fan moving continuously a reason for triggering a record? Probably not - in that case, you'd leave the fan out while making your zones.
 * **P**: This is a "visual filter" which lets you 'filter' the console display based on text you enter. While this may not be particularly useful for small systems, ZoneMinder is also used in mega-installations will well over 200+ cameras and this visual filter helps reduce the monitors you are seeing at one time.
 
+.. todo::
+  add explaination Q
+  
 Adding Monitors
 ^^^^^^^^^^^^^^^
 Now that we have a basic understanding of the web console, lets go about adding a new camera (monitor). For this example, lets assume we have an IP camera that streams RTSP at LAN IP address 192.168.1.33. 
